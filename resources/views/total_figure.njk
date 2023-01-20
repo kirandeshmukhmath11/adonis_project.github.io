@@ -1,0 +1,39 @@
+{% extends 'base' %}
+
+{% block title %}
+Total_Figure_Chart
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+        <div class="chart-tmenu-content">
+			<p><img src="/assets/download.jpg" class="img-fluid" alt="Responsive image"></p>
+
+		</div>
+
+
+
+	<div class="chart-tmenu">
+        
+        <p><img src="/assets/final_result.png" class="img-fluid" alt="Responsive image"></p>
+
+		
+	</div>
+    <div class="info">
+        
+    <p>The above chart shows the activity level of 8 days, the chart comprises of calculated mean_activity (Black color) of month November and actual_activity (Green color) of month December</p>
+            <br/>
+		
+	</div>
+
+	<canvas id="totalView"></canvas>
+
+{% endblock %}
+
+{% block scripts %}
+  <script src="/libs/chart.bundle.min.js"></script>
+  <script src="/libs/co-4.1.0.min.js"></script>
+  <script src="/scripts/total_figure.js"></script>
+{% endblock %}

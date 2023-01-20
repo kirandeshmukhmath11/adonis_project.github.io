@@ -1,0 +1,134 @@
+{% extends 'base' %}
+
+{% block title %}
+1MS20SCN05 Anomaly Detector
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+    <div class = project_name>
+        <div class="container">
+  <h2 class="title">
+    <span class="title-word title-word-1">Threshold</span>
+    <span class="title-word title-word-2">Based</span>
+    <span class="title-word title-word-3">Anomaly</span>
+    <span class="title-word title-word-4">Detection</span>
+    <span class="title-word title-word-5">in</span>
+    <span class="title-word title-word-6">Cellular</span>
+    <span class="title-word title-word-7">Network</span>
+  </h2>
+</div>
+</div>
+
+    <div id="map"></div>
+    
+    <div class="overlay">
+        <p><img src="/assets/download.jpg" class="img-fluid" alt="Responsive image"></p>
+        <div class="overlay-content">
+            
+            <p>
+                <a class="btn btn-default" href="/charts">Check here for charts</a>
+                
+                <a class="btn btn-default" href="/mapsquares">Select squares here</a></p>
+
+            <div class="form-group">
+                <div class="form-inline">
+                    2013 December
+                    <select class="form-control" id="daySelect">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    ,
+                    <select class="form-control" id="hourSelect">
+                        <option selected>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                    </select>
+                    :
+                    <select class="form-control" id="minuteSelect">
+                        <option>0</option>
+                        <option selected>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                        <option>40</option>
+                        <option>50</option>
+                    </select>
+                </div>
+            </div>
+            </p>
+            <br/>
+            <p>Based on the data from the last 10 minutes.</p>
+            <br/>
+
+            <div class="form-group">
+                <div class="form-inline">
+                    <a class="btn btn-success" id="controlButton">RUN</a>
+                </div>
+                <br/>
+                <span class="text-info" id="infoText"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
+{% block scripts %}
+  <script src="/libs/co-4.1.0.min.js"></script>
+  <script src="/scripts/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoyJJuwFRdwtqcS4c7hSW7_Qijoz7SoLw&callback=initMap" async defer></script>
+<a class="btn btn-default" href="http://localhost:3333/">Logout</a>
+{% endblock %}
+

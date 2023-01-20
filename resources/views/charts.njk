@@ -1,0 +1,87 @@
+{% extends 'base' %}
+
+{% block title %}
+Charts
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<div class="canvas">
+<canvas id="chartView"></canvas>
+</div>
+	<div class="chart-menu">
+
+		<div class="chart-menu-content">
+			<p><img src="/assets/download.jpg" class="img-fluid" alt="Responsive image"></p>
+			<p><a class="btn btn-default" href="/total_figure">Total data chart</a></p><br/>
+
+			<p><a class="btn btn-primary" href="/home">Check the map</a></p>
+			<br/>
+
+			<p><a class="btn btn-primary" href="/chartsquares">Select the square</a></p>
+			<br/>
+
+			<div class="form-group">
+				<div class="form-inline">
+					2013 december
+					<select class="form-control" id="daySelect">
+						<option selected>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option>
+					</select>
+				</div>
+			</div>
+
+			<p>Based on the data of the selected day.</p>
+			<br/>
+
+			<div class="form-group">
+				<div class="form-inline">
+					<a class="btn btn-success" id="showButton">Show</a>
+				</div>
+				<br/>
+				<span class="text-info" id="infoText"></span>
+			</div>
+
+		</div>
+	</div>
+
+	
+
+{% endblock %}
+
+{% block scripts %}
+  <script src="/libs/chart.bundle.min.js"></script>
+  <script src="/libs/co-4.1.0.min.js"></script>
+  <script src="/scripts/charts.js"></script>
+{% endblock %}

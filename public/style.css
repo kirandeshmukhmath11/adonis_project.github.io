@@ -1,0 +1,196 @@
+html,
+body,
+#map {
+    position: relative;
+    left: 1px;
+
+    top: 90px;
+    height: 90%;
+    width: 100%;
+}
+
+input {
+
+    text-align: center;
+}
+
+.overlay {
+    position: relative;
+    right: -20px;
+    bottom: 850px;
+
+}
+
+.overlay-content {
+    position: relative;
+    left: 650px;
+    bottom: 150px;
+}
+
+.college_logo {
+    position: relative;
+    right: -20px;
+    bottom: 800px;
+}
+
+.chart-menu {
+
+    height: 100%;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    left: 1450px;
+    top: -350px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.overlay-content,
+.chart-menu-content {
+
+    position: relative;
+    right: 10px;
+    top: 25%;
+    text-align: center;
+}
+
+.chartView {
+
+    position: relative;
+    right: 500px;
+    top: -870px;
+}
+
+.chart-tmenu {
+    position: fixed;
+    width: 1000px;
+    height: -100px;
+    bottom: 250px;
+}
+
+.chart-tmenu-content {
+    position: fixed;
+    right: 1500px;
+    bottom: 660px;
+
+}
+
+.info {
+    position: fixed;
+    right: 800px;
+    left: 100;
+    top: 625px;
+
+}
+
+.canvas {
+    position: fixed;
+    height: 90%;
+    width: 100%;
+    right: 400px;
+    left: 100;
+    top: 10px;
+}
+
+.title-word {
+    animation: color-animation 7s linear infinite;
+    top: -1000px;
+}
+
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+
+}
+
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+.title-word-5 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+.title-word-6 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+.title-word-7 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    position: relative;
+    bottom: -3000;
+}
+
+.project_name {
+    position: fixed;
+    top: -400px;
+    left: 200px;
+}

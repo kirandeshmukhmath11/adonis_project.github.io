@@ -1,0 +1,8 @@
+!.gitkeep
+
+npm-debug.log
+
+/.env
+/node_modules
+/storage
+/database/processed_data.sqlite
