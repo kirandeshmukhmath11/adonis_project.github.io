@@ -6,7 +6,48 @@ body {
     font-feature-settings: "kern", "liga", "pnum";
     -webkit-font-smoothing: antialiased;
     font-weight: lighter;
-    background: #ffffff;
+    background: #2cc6e4;
+}
+
+.watermarked {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    top: 100px;
+    left: 20px;
+}
+
+.watermarkedR {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    left: 425px;
+}
+
+.panel.panel-default {
+    position: relative;
+    top: 50px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav.navbar-nav {
+    font-weight: bold;
+}
+
+.panel-heading {
+    font-weight: bold;
+}
+
+.navbar.navbar-default.navbar-static-top {
+
+    background-color: #f5f1dc;
 }
 
 * {
@@ -78,7 +119,7 @@ body {
 }
 
 .__footer li {
-    border-left: solid 2px #ccc;
+    border-left: solid 2px rgb(10, 9, 9);
     display: table-cell;
 }
 
@@ -94,7 +135,7 @@ body {
     padding: 0px 30px;
     font-size: 13px;
     opacity: 0.8;
-    color: #ccc;
+    color: rgb(16, 14, 14);
 }
 
 .__footer li a:hover {
