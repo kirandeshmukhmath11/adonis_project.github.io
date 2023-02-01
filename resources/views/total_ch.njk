@@ -1,0 +1,50 @@
+{% extends 'base' %}
+
+{% block title %}
+Charts
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<div class="canvas">
+<canvas id="chartView"></canvas>
+</div>
+	<div class="chart-menu">
+
+		<div class="chart-menu-content">
+			<p><img src="/assets/download.jpg" class="img-fluid" alt="Responsive image"></p>
+			<p><a class="btn btn-default" href="/total_figure">Total data chart</a></p><br/>
+
+			<p><a class="btn btn-primary" href="/home">Check the map</a></p>
+			<br/>
+
+			<p><a class="btn btn-primary" href="/chartsquares">Select the square</a></p>
+			<br/>
+
+			
+
+			<p>Based on the data of the selected day.</p>
+			<br/>
+
+			<div class="form-group">
+				<div class="form-inline">
+					<a class="btn btn-success" id="showButton">Show</a>
+				</div>
+				<br/>
+				<span class="text-info" id="infoText"></span>
+			</div>
+
+		</div>
+	</div>
+
+	
+
+{% endblock %}
+
+{% block scripts %}
+  <script src="/libs/chart.bundle.min.js"></script>
+  <script src="/libs/co-4.1.0.min.js"></script>
+  <script src="/scripts/total_ch.js"></script>
+{% endblock %}

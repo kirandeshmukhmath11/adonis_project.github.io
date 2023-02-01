@@ -42,13 +42,14 @@ class AnomalyDetectorController {
 	*
 		getDataForTotalChart(request, response) {
 
-		//var square = request.input('square')
+		var square = request.input('square')
 		//var day = request.input('day')
 
 		const square_data = yield Database
-			.select('day', 'mean_activity', 'actual_activity')
+			.select('mean_activity', 'actual_activity')
 			.from('squares')
-
+			.where('square', square)
+			.where('day', day)
 
 		response.send(square_data)
 	}

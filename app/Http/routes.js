@@ -27,6 +27,7 @@ Route.post('register', 'RegisterController.doRegister')
 Route.on('/home').render('main')
 Route.on('/charts').render('charts')
 Route.on('/total_figure').render('total_figure')
+Route.on('/total_ch').render('total_ch')
 
 Route.get('/mapsquares', function* (request, response) {
 	const parent = 'map'

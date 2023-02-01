@@ -218,7 +218,7 @@ function downloadData() {
 }
 
 function calculateAnomalyProbability(squareData) {
-    if (squareData.actual_activity > 0.45)
+    if (squareData.actual_activity > 0.45 || squareData.actual_activity < 0.00001)
 
         return squareData.actual_activity
 }
@@ -296,10 +296,10 @@ function createSquareViewsFromSquares() {
 
         let squareView = new google.maps.Polygon({
             paths: square.coordinates,
-            strokeColor: square.anomaly_probability ? '#FFCC00' : '#FFFFFF',
+            strokeColor: square.anomaly_probability ? '#FFCC00' : '#b5f7a6',
             strokeOpacity: 0.75,
             strokeWeight: 2,
-            fillColor: square.anomaly_probability ? '#FFCC00' : '#FFFFFF',
+            fillColor: square.anomaly_probability ? '#FFCC00' : '#b5f7a6',
             fillOpacity: square.anomaly_probability ? (square.anomaly_probability > 1 ? 1 : square.anomaly_probability) : 0.5
         })
 
